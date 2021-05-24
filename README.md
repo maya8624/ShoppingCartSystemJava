@@ -20,7 +20,7 @@ Assume already got a list of tour records. TourId, Price
 - bookings
   - Classes
     1. Booking: properties for Booking.
-    2. MockBocking: moking data for test
+    2. MockBocking: mock data for test
 
  # test - using JUnit
 - promotions: BuldDiscountTests, DealTests, FreeTourTests
