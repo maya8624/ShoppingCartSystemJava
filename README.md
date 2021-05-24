@@ -23,5 +23,5 @@ Assume already got a list of tour records. TourId, Price
     2. MockBocking: mock data for test
 
  # test - using JUnit
-- promotions: BuldDiscountTests, DealTests, FreeTourTests
+- promotions: BulkDiscountTests, DealTests, FreeTourTests
 - services: ShoppingCartTests
