@@ -1,4 +1,4 @@
-# Shopping Cart System - Java
+# Shopping Cart System
 Assume already got a list of tour records. TourId, Price 
 
 # src
@@ -14,8 +14,8 @@ Assume already got a list of tour records. TourId, Price
  - services
   - Classes
     1. ShoppingCart: has two methods      
-      1-1. add(tourId) method: update "count, total" columns in the tour booking record by tourId and add the "tour total" to "sum" variable to keep the total for all bookings.
-      1-2. total() method: calculate the total for all bookings and return the value "sum(all bookings total) - promotion discount"
+      - add(tourId) method: update "count, total" columns in the tour booking record by tourId and add the "tour total" to "sum" variable to keep the total for all bookings.
+      - total() method: calculate the total for all bookings and return the value "sum(all bookings total) - promotion discount"
 
  - bookings
   - Classes
