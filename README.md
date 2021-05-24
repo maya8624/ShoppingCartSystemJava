@@ -13,14 +13,14 @@ Assume already got a list of tour records. TourId, Price
       
  - services
   - Classes
-    - ShoppingCart: has two methods      
+    1. ShoppingCart
       - add(tourId) method: update "count, total" columns in the tour booking record by tourId and add the "tour total" to "sum" variable to keep the total for all bookings.
       - total() method: calculate the total for all bookings and return the value "sum(all bookings total) - promotion discount"
 
  - bookings
   - Classes
-    - Booking: properties for Booking.
-    - MockBocking: moking data for test
+    1. Booking: properties for Booking.
+    2. MockBocking: moking data for test
 
  # test - using JUnit
 - promotions: BuldDiscountTests, DealTests, FreeTourTests
