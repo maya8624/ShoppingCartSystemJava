@@ -6,11 +6,11 @@ import java.util.List;
 
 public class Deal implements Promotion {
     private String tourId;
-    private int minToursForOneFree;
+    private int minTicketsForOneFree;
 
     public Deal(String tourId, int minToursForOneFree) {
         this.tourId = tourId;
-        this.minToursForOneFree = minToursForOneFree;
+        this.minTicketsForOneFree = minToursForOneFree;
     }
 
     public double calculateDiscount(List<Booking> bookings) {
@@ -20,7 +20,7 @@ public class Deal implements Promotion {
                         .findFirst()
                         .orElseThrow();
 
-        int freebies = booking.getCount() / minToursForOneFree;
+        int freebies = booking.getCount() / minTicketsForOneFree;
         return freebies * booking.getPrice();
     }
 }

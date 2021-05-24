@@ -7,12 +7,12 @@ import java.util.List;
 public class BulkDiscount implements Promotion {
     private String tourId;
     private double discountPrice;
-    private double minToursForDiscount;
+    private double minTicketsForDiscount;
 
     public BulkDiscount(String tourId, double discountPrice, double minToursForDiscount) {
         this.tourId = tourId;
         this.discountPrice = discountPrice;
-        this.minToursForDiscount = minToursForDiscount;
+        this.minTicketsForDiscount = minToursForDiscount;
     }
 
     @Override
@@ -23,7 +23,7 @@ public class BulkDiscount implements Promotion {
                         .findFirst()
                         .orElseThrow();
 
-        return booking.getCount() < minToursForDiscount ?
+        return booking.getCount() < minTicketsForDiscount ?
                 0 : booking.getCount() * discountPrice;
     }
 }
