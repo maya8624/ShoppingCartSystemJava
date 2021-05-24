@@ -11,13 +11,13 @@ Assume already got a list of tour records. TourId, Price
   - Interfaces
     1. Promotion: has calculateTotal(List bookings) method all promotion classes should implement this method.
       
- - services
+- services
   - Classes
     1. ShoppingCart
       - add(tourId) method: update "count, total" columns in the tour booking record by tourId and add the "tour total" to "sum" variable to keep the total for all bookings.
       - total() method: calculate the total for all bookings and return the value "sum(all bookings total) - promotion discount"
 
- - bookings
+- bookings
   - Classes
     1. Booking: properties for Booking.
     2. MockBocking: moking data for test
